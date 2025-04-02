@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GithubProfileVeiwer</title>
+</head>
+<!-- User inputs username -->
+<body>
+   <div class="form-container">    
+        <input id="username" type="text" placeholder="Github username">
+        <div id="error" class="error"></div>
+        <div id="loading" class="loading">Loading...</div>
+   </div>
+<!-- Buttone which fetches inputed username stats -->   
+   <button class="form-container" id="fetch-profile">Get Profile</button>
+<!-- Profile content shows up once fetched from github api -->   
+   <div class="profile-stats">
+        <img id="avitar" class="profile-avitar" src="" alt="Profile avitar">
+        <p id="name"></p>
+        <p id="location"></p>
+        <p id="bio"></p>
+        <div class="stat-item">
+            <h4>Repositories</h4>
+            <p id="repos"></p>
+        </div>
+   </div>
+</body>
+</html>
